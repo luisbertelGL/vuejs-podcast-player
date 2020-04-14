@@ -15,6 +15,7 @@
 
 .content {
   height: 100%;
+  margin: 0.5em;
 
   .v-content__wrap {
     overflow: auto;
@@ -25,8 +26,8 @@
 </style>
 
 <script>
-import AppBar from '../app-bar/app-bar.vue';
-import Navigation from '../navigation/navigation-drawer.vue';
+import AppBar from './app-bar.vue';
+import Navigation from './navigation-drawer.vue';
 export default {
   name: 'Layout',
   components: {

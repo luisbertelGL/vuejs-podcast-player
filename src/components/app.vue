@@ -19,7 +19,7 @@
 </style>
 
 <script>
-import MainLayout from '@/components/layout/main-layout.vue';
+import MainLayout from '@/components/main-layout.vue';
 export default {
   name: 'App',
   components: {
