@@ -1,32 +1,32 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <MainLayout />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="scss" scoped>
+.app {
+  height: 100vh;
 }
 
-#nav {
-  padding: 30px;
-}
+.content {
+  height: 100%;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  .v-content__wrap {
+    overflow: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
 </style>
+
+<script>
+import MainLayout from '@/components/layout/main-layout.vue';
+export default {
+  name: 'App',
+  components: {
+    MainLayout,
+  },
+  created() {
+    this.$vuetify.theme.dark = true;
+  },
+};
+</script>
